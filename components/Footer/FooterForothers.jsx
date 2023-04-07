@@ -2,7 +2,7 @@ import styles from "../../styles/Footer.module.css"
 import { Link } from "react-scroll";
 
 
-const Footer = () =>{
+const FooterForOthers = () =>{
     return(
         <div className="width-100" style={{backgroundColor:"var(--landingPageColor)"}}>
             <div className={`res-1400 ${styles.main_footer}`}>
@@ -15,13 +15,7 @@ const Footer = () =>{
                         <a className={styles.footer_linker_div_link} href="">Gloves</a>
                         <a className={styles.footer_linker_div_link} href="">Paddle Rackets</a>
                     </div>
-                    <div className={styles.footer_linker_div}>
-                        <h1 className={styles.footer_linker_div_h1}>Customer Service</h1>
-                        <Link to="home" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Contact</Link>
-                        <Link to="about" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">About</Link>
-                        <Link to="browseproducts" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Browse Our Product</Link>
-                        <Link to="collection" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Collection</Link>
-                    </div>
+                    
                 </div>
                 <div className={styles.footer_logo_linker_part_main_cnt}>
                     <div className={styles.footer_logo_linker_logo_part}>
@@ -41,4 +35,4 @@ const Footer = () =>{
     )
 }
 
-export default Footer;
+export default FooterForOthers;

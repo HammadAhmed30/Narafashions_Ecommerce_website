@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css"
 
 const KnowAboutUs = () =>{
     return(
-        <div className="width-100">
+        <div className="width-100" id="about">
             <div className={styles.image_know_about_us}>
                 <div className={styles.image_know_about_us_image_main}>
                     <img src="/src/know about us.png" alt="" />

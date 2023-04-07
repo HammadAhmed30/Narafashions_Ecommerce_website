@@ -23,7 +23,10 @@
 .logo_img_navbar{
     height: 80%;
 }
-.linkers_navbar a{
+.linkers_navbar{
+    display: flex;
+}
+.linkers_navbar_Link{
     font-family: "poppins";
     font-size: 1.1em;
     cursor: pointer;
@@ -38,6 +41,11 @@
 }
 .menu_btn_navbar{
     height: 30px;
+    display: none;
+    cursor: pointer;
+}
+.menu_btn_navbar_search{
+    height: 1.1em;
     display: none;
     cursor: pointer;
 }
@@ -63,7 +71,7 @@
     justify-content: center;
     align-items: center;
 }
-.linker_menu_navbar a{
+.linker_menu_navbar_Link{
     font-family: "poppins";
     font-size: 1.3em;
     cursor: pointer;
@@ -175,6 +183,9 @@
 
 @media only screen and (max-width: 850px) {
     .menu_btn_navbar{
+        display: block;
+    }
+    .menu_btn_navbar_search{
         display: block;
     }
     .linkers_navbar{

@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding:0;
+  box-sizing: border-box;
   color: white;
   font-family: "Lexend Giga", sans-serif;
 }
@@ -18,6 +19,11 @@
 }
 .res-1400-40{
   width: min(100% - 40px, 1400px);
+  margin: 0 auto;
+  margin-inline: auto;
+}
+.res-1400-30{
+  width: min(100% - 30px, 1400px);
   margin: 0 auto;
   margin-inline: auto;
 }
@@ -46,6 +52,11 @@ button{
 
 @media only screen and (max-width: 900px) {
   .res-1400-40{
+    width: min(100% - 20px, 1400px);
+    margin: 0 auto;
+    margin-inline: auto;
+  }
+  .res-1400-30{
     width: min(100% - 20px, 1400px);
     margin: 0 auto;
     margin-inline: auto;

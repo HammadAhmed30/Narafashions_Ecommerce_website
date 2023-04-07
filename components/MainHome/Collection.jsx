@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css"
 
 const Collection = () => {
     return(
-        <div className="width-100">
+        <div className="width-100" id="collection">
             <div className="res-1400-40">
                 <h1 className={styles.collection_heading}>COLLECTION</h1>
                 <div className={styles.collection_grid}>

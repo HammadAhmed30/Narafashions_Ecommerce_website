@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css"
 
 const ContactPart = () =>{
     return(
-        <div className="width-100">
+        <div className="width-100" id="contact">
             <div className={styles.contact_res_1400_40}>
                 <div className={styles.contact_part_contact_section}>
                     <div className={styles.contact_info_contact_section}>

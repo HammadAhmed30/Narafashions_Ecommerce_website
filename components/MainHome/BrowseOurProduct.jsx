@@ -20,7 +20,7 @@ const BrowseOurProducts = () => {
   };
 
   return (
-    <div className={`${styles.our_products_main_cnt} width-100`}>
+    <div className={`${styles.our_products_main_cnt} width-100`} id="browseproducts">
       <div className={`${styles.main_dispaly_flex_cnt_browse}`}>
         <div style={{ position: "relative" }}>
           {currentIndex != 0 && (
