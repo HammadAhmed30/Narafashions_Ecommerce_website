@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  color: white;
+  font-family: "Lexend Giga", sans-serif;
+}
+:root{
+  --landingPageColor :#292929;
+  --mainColorAll: #1e1e1e;
+}
+.res-1400{
+  width: min(100% - 20px, 1400px);
+  margin: 0 auto;
+  margin-inline: auto;
+}
+.res-1400-40{
+  width: min(100% - 40px, 1400px);
+  margin: 0 auto;
+  margin-inline: auto;
+}
+.width-100{
+  width: 100%;
+  overflow-x: hidden;
+}
+.main_black_background{
+  background-color: var(--mainColorAll);
+}
+button{
+  font-family: "poppins";
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.res-1400-all{
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  margin-inline: auto;
+}
+
+
+/* Media Query */
+
+
+@media only screen and (max-width: 900px) {
+  .res-1400-40{
+    width: min(100% - 20px, 1400px);
+    margin: 0 auto;
+    margin-inline: auto;
+  }
+}
