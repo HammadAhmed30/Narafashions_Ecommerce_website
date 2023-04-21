@@ -1,5 +1,6 @@
 import styles from "../../styles/Home.module.css";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 const BrowseOurProducts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,7 +21,10 @@ const BrowseOurProducts = () => {
   };
 
   return (
-    <div className={`${styles.our_products_main_cnt} width-100`} id="browseproducts">
+    <div
+      className={`${styles.our_products_main_cnt} width-100`}
+      id="browseproducts"
+    >
       <div className={`${styles.main_dispaly_flex_cnt_browse}`}>
         <div style={{ position: "relative" }}>
           {currentIndex != 0 && (
@@ -52,7 +56,6 @@ const BrowseOurProducts = () => {
             <div
               style={{
                 scrollSnapAlign: "start",
-                // paddingRight: "0 10px",
                 scrollSnapStop: "always",
                 position: "relative",
                 height: "100%",
@@ -68,14 +71,15 @@ const BrowseOurProducts = () => {
                 <br />
                 Wear
               </h1>
-              <button className={styles.card_scroller_categories_btn}>
-                See all
-              </button>
+              <Link href="/sportswear">
+                <button className={styles.card_scroller_categories_btn}>
+                  View all
+                </button>
+              </Link>
             </div>
             <div
               style={{
                 scrollSnapAlign: "start",
-                // paddingRight: "0 10px",
                 scrollSnapStop: "always",
                 position: "relative",
                 height: "100%",
@@ -91,14 +95,15 @@ const BrowseOurProducts = () => {
                 <br />
                 Wear
               </h1>
-              <button className={styles.card_scroller_categories_btn}>
-                See all
-              </button>
+              <Link href="/casualwear">
+                <button className={styles.card_scroller_categories_btn}>
+                  View all
+                </button>
+              </Link>
             </div>
             <div
               style={{
                 scrollSnapAlign: "start",
-                // paddingRight: "0 10px",
                 scrollSnapStop: "always",
                 position: "relative",
                 height: "100%",
@@ -114,14 +119,15 @@ const BrowseOurProducts = () => {
                 <br />
                 Wear
               </h1>
-              <button className={styles.card_scroller_categories_btn}>
-                See all
-              </button>
+              <Link href="/fitnesswear">
+                <button className={styles.card_scroller_categories_btn}>
+                  View all
+                </button>
+              </Link>
             </div>
             <div
               style={{
                 scrollSnapAlign: "start",
-                // paddingRight: "0 10px",
                 scrollSnapStop: "always",
                 position: "relative",
                 height: "100%",
@@ -133,9 +139,11 @@ const BrowseOurProducts = () => {
                 alt=""
               />
               <h1 className={styles.card_scroller_categories_h1}>Gloves</h1>
-              <button className={styles.card_scroller_categories_btn}>
-                See all
-              </button>
+              <Link href="/gloves">
+                <button className={styles.card_scroller_categories_btn}>
+                  View all
+                </button>
+              </Link>
             </div>
           </div>
         </div>

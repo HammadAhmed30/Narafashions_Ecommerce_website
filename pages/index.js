@@ -6,22 +6,25 @@ import Collection from "@/components/MainHome/Collection";
 import ContactPart from "@/components/MainHome/Contact";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-
+import Head from "next/head";
 
 
 const Home = () => {
-  return(
+  return (
     <div className="width-100">
+      <Head>
+        <title>NaraFashions | Abrade The Best Apparel</title>
+      </Head>
       <Navbar />
       <LandingPage />
       <KnowAboutUs />
       <BrowseOurProducts />
-      <OurAssurance/>
+      <OurAssurance />
       <Collection />
       <ContactPart />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Home;

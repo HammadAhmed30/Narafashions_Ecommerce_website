@@ -1,0 +1,355 @@
+.main_img_para_details_section {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gray_send_inquiry_headline{
+  background-color: #848484;
+  margin-top: 75px;
+  width: 100%;
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+}
+.url_bar_product_original{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4em auto;
+}
+.url_bar_product_original_p{
+  font-size: .9em;
+}
+.gray_send_inquiry_headline_p{
+  color: black;
+  width: 90%;
+  text-align: center;
+  font-size: .9em;
+}
+.gray_send_inquiry_headline_span{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.right_details_page {
+  width: 55%;
+}
+.send_inquiry_btn_white {
+  padding: 11px 35px;
+  color: white;
+  border: none;
+  font-size: 0.8em;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  font-weight: 300;
+  margin-top: 40px;
+  transition: all ease 200ms;
+}
+.send_inquiry_btn {
+  padding: 13px 35px;
+  color: black;
+  border: none;
+  font-size: 0.8em;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: white;
+  margin-top: 40px;
+  transition: all ease 200ms;
+}
+.parent_cata_image {
+  position: relative;
+  z-index: 10;
+}
+.image_back_heading_cata {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  max-width: 500px;
+}
+.product_details_product_name_right {
+  font-family: "Lexend Giga";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4em;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+  line-height: 98.19%;
+  letter-spacing: -0.125em;
+  text-transform: uppercase;
+}
+.more_from_this_cate_send_inq_product_details_page{
+  margin: 4em 0;
+}
+.more_from_this_cate_send_inq_product_details_page_h1{
+  font-family: 'Lexend Giga';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  word-wrap: break-word;
+  line-height: 102.5%;
+  letter-spacing: -0.125em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.description_details_page_desc_right_h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 36px;
+  color: #ffffff;
+}
+.details_points_dtl_right_h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 36px;
+  color: #ffffff;
+}
+.details_points_dtl_right_li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 140%;
+  color: #ffffff;
+}
+.details_description_para_after {
+  font-family: "Poppins" !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 140%;
+  color: #ffffff;
+}
+.details_points_dtl_right {
+  margin: 15px auto;
+}
+.description_details_page_desc_right {
+  margin: 15px auto;
+}
+.size_guide_btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95em;
+  cursor: pointer;
+  line-height: 22px;
+  text-decoration: none;
+  margin-top: 2em;
+  color: #ffffff;
+}
+.more_from_this_cate_send_inq_product_details_page_div_3_cnt{
+  width: min(100% , 1000px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3em;
+  grid-gap: 10px;
+}
+.heading_cata_name {
+  z-index: +10;
+}
+.send_inquiry_btn:hover {
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0px 10px 30px rgb(28, 28, 28);
+}
+.send_inquiry_btn_white:hover {
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0px 10px 30px rgb(28, 28, 28);
+}
+.details_page_img_cnt {
+  width: 40%;
+}
+.details_page_img {
+  margin-right: 20px;
+  max-width: 400px;
+  min-width: 300px;
+  width: 45%;
+}
+.details_description_part {
+  margin-top: 5em;
+  padding: 50px 0;
+  width: 60%;
+  transform: translateX(-10px);
+  color: white;
+  background-color: rgb(36, 36, 36);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.details_description_para {
+  line-height: 190%;
+  font-weight: 200;
+  font-size: 0.85em;
+  margin-left: 10px;
+  padding: 15px;
+}
+.more_btn_cnt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.details_dscription_heading {
+  padding: 15px;
+  font-weight: 500;
+  font-size: 2.2em;
+}
+.send_see_more_btn:hover {
+  transform: translateY(-10px);
+  -webkit-box-shadow: 0px 10px 30px rgb(28, 28, 28);
+}
+.send_see_more_btn {
+  padding: 13px 35px;
+  color: white;
+  border: none;
+  font-size: 0.8em;
+  outline: none;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: all ease 300ms;
+  border-radius: 40px;
+}
+.main_more_cnt {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more_prod_from_cata {
+  margin-top: 40px;
+  font-weight: 400;
+  color: white;
+}
+.more_from_this_heading {
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 130%;
+}
+
+/* Send Inquiry Component ( CSSS styling ) */
+
+.main_form_cnt_send_inquiry {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.884);
+  position: fixed;
+  top: 110%;
+  overflow-y: scroll;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(16.2px);
+  -webkit-backdrop-filter: blur(16.2px);
+  z-index: 1000;
+  transition: all 400ms ease;
+}
+.main_form_cnt_send_inquiry::-webkit-scrollbar {
+  width: 0px;
+}
+.main_form_form_send_inquiry_form{
+  display: flex;
+  flex-direction: column;
+}
+.form_send_inquiry_input_feild{
+  background-color: var(--mainColorAllLight);
+  color: white;
+  font-family: "poppins";
+  outline: none;
+  border: none;
+  padding:15px 10px;
+  margin: 10px 0;
+}
+.form_send_inquiry_input_feild::placeholder{
+  color: rgb(157, 157, 157);
+}
+.form_send_inquiry_textarea{
+  background-color: var(--mainColorAllLight);
+  color: white;
+  font-family: "poppins";
+  outline: none;
+  border: none;
+  padding:15px 15px;
+  margin: 10px 0;
+}
+.form_send_inquiry_textarea::placeholder{
+  color: rgb(157, 157, 157);
+}
+.submit_btn_send_imquiry{
+  min-width: 100px;
+  width: 150px;
+  font-weight: 200;
+  cursor: pointer;
+  background-color: #404040;
+  outline: none;
+  margin: 10px 0;
+  border: none;
+  padding: 11px 15px;
+  transition: all 100ms ease;
+}
+.submit_btn_send_imquiry:hover{
+  transform: translateY(-3px);
+}
+.send_inquiry_cross_form_btn{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.send_inquiry_heading_h1_form{
+  font-size: 1.4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+}
+.open_send_inquiry_form{
+  top: 0;
+}
+.close_send_inquiry_form{
+  top: 110%;
+}
+
+
+/* Media Queries for responsivness */
+
+@media only screen and (max-width: 970px) {
+  .main_img_para_details_section {
+    flex-direction: column;
+  }
+  .right_details_page {
+    margin-top: 3em;
+    width: 100%;
+  }
+  .more_from_this_cate_send_inq_product_details_page_h1{
+    font-size: 1.6em;
+  }
+  .details_page_img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .details_page_img {
+    margin-right: 0px;
+  }
+  .url_bar_product_original{
+    margin: 2.5em auto;
+  }
+}

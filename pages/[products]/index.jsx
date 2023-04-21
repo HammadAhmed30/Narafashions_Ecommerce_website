@@ -3,12 +3,12 @@ import NavbarForOther from "@/components/Navbar/NavbarForOther"
 import ParentProductsPage from "@/components/Products Display/ParentProductPage"
 
 
-
 const ParentPoduct = () =>{
+
     return(
         <div className="width-100">
             <NavbarForOther/>
-            <ParentProductsPage name="sport Name "/>
+            <ParentProductsPage />
             <FooterForOthers/>
         </div>
     )

@@ -1,25 +1,65 @@
 .main_heading_landing_page{
   color: white;
   font-weight: 700;
-  font-size: 4.7em;
-  line-height: 87.69%;
-
-  letter-spacing: -0.12em;
+  font-size: 3.1em;
+  line-height: 100.69%;
+  letter-spacing: -0.1em;
   text-transform: uppercase;
 }
 .color_main_landing_page{
-  background-color: var(--landingPageColor);
-  height: 100vh;
+  position: relative;
+}
+.color_main_landing_page::before{
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.825), rgba(0, 0, 0, 0));
+}
+.video_holder{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main_video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
 }
 .landing_page_explore_more_btn{
   font-weight: 200;
+  position: relative;
   font-family: "poppins";
-  width: 200px;
-  height: 55px;
   margin-top: 30px;
-  font-size: 1.1em;
-  background-color: black;
+  font-size: .9em;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
+}
+.landing_page_explore_more_btn::before{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  transform: translateX(-50%) rotate(45deg);
+  animation-name: ExploreMore;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .main_flex_cnt_landing_page{
   display: flex;
@@ -29,8 +69,12 @@
   height: 100%;
 }
 .main_cnt_heading_landing_page_holder{
-  margin-bottom: 60px;
+  position: absolute;
+  margin-bottom: 20px;
   z-index: 10;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
   margin-left: 20px;
 }
 .image_shirt_landing_page{
@@ -118,7 +162,7 @@
   font-style: normal;
   margin: 20px 0;
   font-weight: 300;
-  font-size: 1em;
+  font-size: .85em;
   line-height: 150%;
   text-transform: capitalize;
 }
@@ -153,8 +197,9 @@
 }
 .card_scroller_categories{
   position: relative;
-  width: calc(40vw + 20px);
+  width: 40vw;
   overflow-y: hidden;
+  border-bottom-right-radius: 30vh;
   display: flex;
   scroll-behavior: smooth; 
   height: calc(80vh + 7vw);
@@ -171,7 +216,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10;
   border-radius: 50%;
   width: 35px;
   transform: rotate(180deg) translateY(50%);
@@ -188,7 +233,7 @@
 .arrow_btn_scroll_2{
   background-color: black;
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   right: 20px;
   border-radius: 50%;
   display: flex;
@@ -205,17 +250,11 @@
 .card_scroller_categories_img{
   width: 40vw;
   height: 100%;
-  margin: 0 10px;
-  margin: 0 10px;
-  border-bottom-right-radius: 30vh;
   object-fit: cover;
 }
 .card_scroller_categories_img_2{
-  margin: 0 10px;
   width: 40vw;
-  padding-right: 10px;
   height: 100%;
-  border-bottom-right-radius: 30vh;
   object-fit: cover;
 }
 .card_scroller_categories_h1{
@@ -234,6 +273,7 @@
   background-color: black;
   font-size: .9em;
   padding: 12px 50px;
+  font-weight: 300;
   position: absolute;
   bottom: calc(25% - 4em);
   left: calc(10px + 3vw);
@@ -256,8 +296,8 @@
   font-family: 'Poppins';
   margin-top: 25px;
   font-style: normal;
-  font-weight: 300;
-  font-size: 1.1em;
+  font-weight: 200;
+  font-size: .95em;
   line-height: 124.19%;
   text-align: right;
   letter-spacing: 0.055em;
@@ -277,6 +317,7 @@
   width: 40px;
   margin-right: 20px;
 }
+
 
 /* Collection */
 
@@ -304,9 +345,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 400ms ease-out;
 }
 .collection_grid_item{
   position: relative;
+  overflow: hidden;
+}
+.collection_grid_item:hover .item_collection_img{
+  transform: scale(1.04);
 }
 .item_collection_h_holder{
   position: absolute;
@@ -333,9 +379,10 @@
 .item_collection_para{
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 300;
-  font-size: .9em;
-  margin: 14px 0;
+  font-weight: 200;
+  width: 80%;
+  font-size: 1em;
+  margin: 15px 0;
   margin-left: .115em;
   line-height: 124%;
   letter-spacing: 0.04em;
@@ -348,11 +395,11 @@
 .heading_contact_page{
   font-family: 'Lexend Giga';
   font-style: normal;
-  font-weight: 700;
-  margin: 20px 0;
-  font-size: 2.7em;
+  font-weight: 800;
+  margin: 40px 0;
+  font-size: 2.8em;
   line-height: 102.69%;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -496,6 +543,21 @@
 
 
 
+
+/* Animations */
+
+
+@keyframes ExploreMore {
+  0%, 100%{
+    bottom: -10px;
+  }
+  50%{
+    bottom: -20px;
+  }
+}
+
+
+
 /* Media Queries */
 
 
@@ -521,9 +583,11 @@
     width: 170px;
   }
   .main_dispaly_flex_cnt_browse{
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
-
+  .heading_contact_page{
+    font-size: 3.2em;
+  }
 }
 @media only screen and (max-width: 900px) {
   .heading_logo_know_about_us_btn{
@@ -537,10 +601,13 @@
     width: 100%;
   }
   .subscribe_contact_section{
-    width: 80%;
+    width: 94%;
     padding: 20px;
     border-radius: 10px;
     flex-direction: column;
+  }
+  .subscribe_contact_section_heading_part_para{
+    font-size: .9em;
   }
   .contact_res_1400_40{
     width: min(100% - 20px, 1400px);
@@ -593,7 +660,7 @@
     width: 100%;
   }
   .description_div_cnt{
-    width: min(100% - 2em - 20px, 1400px);
+    width: min(100%  - 30px, 1400px);
     margin: 0 auto;
     margin-top: calc(1em + 10px);
     margin-inline: auto;
@@ -603,15 +670,15 @@
     flex-flow: column-reverse;
   }
   .card_scroller_categories{
-    width: min(100vw - 10px, 1400px);
+    width: min(100vw  - 20px);
     margin: 0 auto;
     margin-inline: auto;
   }
   .card_scroller_categories_img{
-    width: calc(100vw - 30px);
+    width: calc(100vw - 20px);
   }
   .card_scroller_categories_img_2{
-    width: calc(100vw - 30px);
+    width: calc(100vw - 20px);
   }
   .main_details_part_browser{
     width: min(100% - 20px, 1400px);
@@ -631,14 +698,11 @@
   .image_shirt_landing_page{
     display: none;
   }
-  .color_main_landing_page{
-    height: 80vh;
-  }
   .main_cnt_heading_landing_page_holder{
     margin-left: 0;
   }
   .main_heading_landing_page{
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
@@ -654,11 +718,11 @@
     font-size: .85em;
   }
   .main_heading_landing_page{
-    font-size: 3em;
+    font-size: 2.9em;
   }
   .landing_page_explore_more_btn{
-    width: 170px;
     font-size: .9em;
-    height: 50px;
   }
 }
+
+

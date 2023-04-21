@@ -1,6 +1,6 @@
 import styles from "../../styles/Footer.module.css"
-import { Link } from "react-scroll";
-
+import { Link as Linker } from "react-scroll";
+import Link from "next/link";
 
 const Footer = () =>{
     return(
@@ -9,18 +9,18 @@ const Footer = () =>{
                 <div className={styles.footer_linker_main_cnt}>
                     <div className={styles.footer_linker_div}>
                         <h1 className={styles.footer_linker_div_h1}>Categories</h1>
-                        <a className={styles.footer_linker_div_link} href="">Sportswear</a>
-                        <a className={styles.footer_linker_div_link} href="">Fitness wear</a>
-                        <a className={styles.footer_linker_div_link} href="">Casual wear</a>
-                        <a className={styles.footer_linker_div_link} href="">Gloves</a>
-                        <a className={styles.footer_linker_div_link} href="">Paddle Rackets</a>
+                        <Link className={styles.footer_linker_div_link} href="/sportswear">Sportswear</Link>
+                        <Link className={styles.footer_linker_div_link} href="/fitnesswear">Fitness wear</Link>
+                        <Link className={styles.footer_linker_div_link} href="/casualwear">Casual wear</Link>
+                        <Link className={styles.footer_linker_div_link} href="/gloves">Gloves</Link>
+                        <Link className={styles.footer_linker_div_link} href="/paddlerackets">Paddle Rackets</Link>
                     </div>
                     <div className={styles.footer_linker_div}>
                         <h1 className={styles.footer_linker_div_h1}>Customer Service</h1>
-                        <Link to="home" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Contact</Link>
-                        <Link to="about" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">About</Link>
-                        <Link to="browseproducts" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Browse Our Product</Link>
-                        <Link to="collection" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Collection</Link>
+                        <Linker to="home" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Contact</Linker>
+                        <Linker to="about" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">About</Linker>
+                        <Linker to="browseproducts" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Browse Our Product</Linker>
+                        <Linker to="collection" spy={true} offset={50} smooth={true} duration={500} className={styles.footer_linker_div_link} href="">Collection</Linker>
                     </div>
                 </div>
                 <div className={styles.footer_logo_linker_part_main_cnt}>
